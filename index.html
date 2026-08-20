@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/organic-b08ef820-5286-4060-ba3c-cb4b22cdfdf5/styles.css">
+<script src="_ds/organic-b08ef820-5286-4060-ba3c-cb4b22cdfdf5/_ds_bundle.js"></script>
+<style>
+  body { background: var(--color-neutral-300); margin: 0; }
+  .scroll-y { overflow-y: auto; scrollbar-width: none; }
+  .scroll-y::-webkit-scrollbar { display: none; }
+  .scroll-x { overflow-x: auto; scrollbar-width: none; }
+  .scroll-x::-webkit-scrollbar { display: none; }
+  a { color: var(--color-accent-700); }
+  a:hover { color: var(--color-accent-600); }
+</style>
+</helmet>
+
+<div style="width: 100%; max-width: 430px; margin: 0 auto; min-height: 100vh; background: var(--color-bg); color: var(--color-text); font-family: var(--font-body); position: relative; overflow-x: hidden">
+
+  <div style="position: relative; padding: 26px 20px 30px; background: #82C56A; background-image: repeating-linear-gradient(115deg, transparent 0 26px, rgba(255,255,255,0.16) 26px 40px); overflow: hidden">
+    <div style="position: absolute; top: 30px; right: 14px; width: 62px; height: 62px; border-radius: 999px; background: #EFB4D5"></div>
+    <div style="position: absolute; top: 44px; right: 62px; width: 44px; height: 44px; border-radius: 999px; background: #EFB4D5"></div>
+    <div style="position: absolute; top: 16px; right: 46px; width: 40px; height: 40px; border-radius: 999px; background: #EFB4D5"></div>
+    <div style="position: absolute; top: 8px; left: 18px; width: 46px; height: 46px; border-radius: 999px; background: #C4E3B2"></div>
+    <div style="position: absolute; top: 22px; left: 52px; width: 32px; height: 32px; border-radius: 999px; background: #C4E3B2"></div>
+
+    <span style="position: relative; display: inline-block; padding: 6px 13px; border-radius: 999px; background: #FFFFFF; font-size: 12px; font-weight: 700; color: #3F7A2F">학생 운영 · 캠퍼스 비공식 안내</span>
+    <h1 style="position: relative; margin: 14px 0 0; font-size: 34px; line-height: 1.18; color: var(--color-neutral-100)">국제학부<br>다회용기 배달</h1>
+    <p style="position: relative; margin: 12px 0 0; font-size: 14px; line-height: 1.6; color: var(--color-neutral-100); max-width: 24ch">앱 설치 없이, 늘 쓰던 배달 앱으로. 다회용기로 시키면 더 싸게 먹어요.</p>
+
+    <div style="position: relative; display: flex; align-items: center; gap: 12px; margin-top: 10px">
+      <div style="flex: 1; font-size: 13px; color: rgba(255,255,255,0.9); line-height: 1.6">국제학부가 함께 채우는 이번 달 목표<br>매주 업데이트</div>
+      <svg viewBox="0 0 130 130" style="width: 104px; height: 104px; flex: none; margin-bottom: -10px" aria-hidden="true">
+        <ellipse cx="48" cy="112" rx="15" ry="8" fill="#6FB556"></ellipse>
+        <ellipse cx="82" cy="112" rx="15" ry="8" fill="#6FB556"></ellipse>
+        <path d="M65 30 C 60 14, 74 6, 84 8 C 78 20, 74 26, 65 30 Z" fill="#B7DFA4" stroke="#4E9139" stroke-width="4" stroke-linejoin="round"></path>
+        <circle cx="65" cy="68" r="40" fill="#EAF6E0" stroke="#4E9139" stroke-width="4"></circle>
+        <ellipse cx="26" cy="72" rx="8" ry="10" fill="#EAF6E0" stroke="#4E9139" stroke-width="4"></ellipse>
+        <ellipse cx="104" cy="72" rx="8" ry="10" fill="#EAF6E0" stroke="#4E9139" stroke-width="4"></ellipse>
+        <circle cx="53" cy="63" r="4.5" fill="#3F7A2F"></circle>
+        <circle cx="77" cy="63" r="4.5" fill="#3F7A2F"></circle>
+        <ellipse cx="42" cy="76" rx="7" ry="4.5" fill="#F2C3DC"></ellipse>
+        <ellipse cx="88" cy="76" rx="7" ry="4.5" fill="#F2C3DC"></ellipse>
+        <path d="M56 78 q 9 9 18 0" fill="none" stroke="#3F7A2F" stroke-width="4" stroke-linecap="round"></path>
+        <rect x="46" y="88" width="38" height="17" rx="7" fill="#F7D9E9" stroke="#D982B4" stroke-width="3.5"></rect>
+      </svg>
+    </div>
+  </div>
+
+  <div style="padding: 16px 20px 0">
+    <div style="border-radius: var(--radius-lg); background: #4E9139; padding: 20px; color: #FFFFFF; position: relative; overflow: hidden">
+      <div style="position: absolute; right: -26px; bottom: -26px; width: 110px; height: 110px; border-radius: 999px; background: color-mix(in srgb, #fff 10%, transparent)"></div>
+      <div style="position: relative; font-size: 13px; font-weight: 700">🌏 {{ campusName }} · 이번 달 다회용기</div>
+      <div style="position: relative; font-family: var(--font-heading); font-size: 40px; line-height: 1.1; margin-top: 6px">{{ returnedText }}<span style="font-size: 18px">개</span></div>
+      <div style="position: relative; height: 10px; border-radius: 999px; background: color-mix(in srgb, #fff 28%, transparent); margin-top: 14px; overflow: hidden">
+        <div style="width: 70%; height: 100%; border-radius: 999px; background: var(--color-neutral-100)"></div>
+      </div>
+      <div style="position: relative; font-size: 13px; font-weight: 700; margin-top: 12px">목표 1,200개 달성 시 → 국제관 다회용기존 상시 운영 🌳</div>
+    </div>
+
+    <div style="margin-top: 12px; border-radius: var(--radius-lg); border: 2px dashed #E9A5C9; background: #FCEEF5; padding: 14px 16px; display: flex; gap: 12px; align-items: center">
+      <span style="width: 38px; height: 38px; flex: none; border-radius: 12px; background: #F2C3DC; display: flex; align-items: center; justify-content: center; font-size: 17px">🎟️</span>
+      <div>
+        <div style="font-family: var(--font-heading); font-size: 16px; color: #A63C79">이번 주 다회용기 쿠폰 1,000원</div>
+        <div style="font-size: 12px; color: #A63C79; margin-top: 3px">매장 고르고 → 주문 화면에서 '다회용기 사용' 선택 시 적용</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 26px 20px 0">
+    <h2 style="margin: 0; font-size: 22px">🍜 다회용기로 싸게 먹는 집</h2>
+    <p style="margin: 6px 0 0; font-size: 13px; color: var(--color-neutral-600)">일회용가 → 다회용가로 표시 · 탭하면 주문 창이 열려요</p>
+
+    <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 16px">
+      <sc-for list="{{ stores }}" as="s" hint-placeholder-count="3">
+        <div style="border-radius: var(--radius-lg); background: var(--color-neutral-100); border: 1px solid var(--color-neutral-200); padding: 18px; box-shadow: var(--shadow-sm)">
+          <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 10px">
+            <div>
+              <div style="font-family: var(--font-heading); font-size: 19px">{{ s.name }}</div>
+              <div style="font-size: 13px; color: var(--color-neutral-600); margin-top: 4px">{{ s.meta }}</div>
+            </div>
+            <span style="padding: 5px 11px; border-radius: 999px; background: #DCF0D0; color: #3F7A2F; font-size: 12px; font-weight: 700; white-space: nowrap">다회용 가능</span>
+          </div>
+          <div style="display: flex; align-items: baseline; gap: 9px; margin-top: 12px; flex-wrap: wrap">
+            <span style="font-size: 14px; color: var(--color-neutral-500); text-decoration: line-through">{{ s.before }}</span>
+            <span style="font-family: var(--font-heading); font-size: 24px">{{ s.after }}</span>
+            <span style="padding: 4px 10px; border-radius: 999px; background: #BE5C94; color: #fff; font-size: 12px; font-weight: 700">▼{{ s.save }}</span>
+          </div>
+          <div style="font-size: 13px; color: var(--color-neutral-700); margin-top: 8px">반납 <span style="color: #4E9139; font-weight: 700">{{ s.station }}</span></div>
+          <button onClick="{{ s.order }}" style="width: 100%; margin-top: 14px; padding: 15px; border-radius: 999px; border: 1px solid transparent; background: #BE5C94; color: #fff; font-family: var(--font-heading); font-size: 15px; cursor: pointer" style-hover="background: #A85183" style-active="background: #A63C79">이 가게 다회용기 주문하기</button>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <div style="padding: 30px 20px 0">
+    <h2 style="margin: 0; font-size: 22px">♻️ 다 먹고, 가까운 반납 스테이션에</h2>
+    <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 14px">
+      <div style="display: flex; align-items: center; gap: 12px; border-radius: var(--radius-lg); background: var(--color-neutral-100); border: 1px solid var(--color-neutral-200); padding: 14px 16px">
+        <span style="width: 38px; height: 38px; flex: none; border-radius: 12px; background: #DCF0D0; color: #3F7A2F; display: flex; align-items: center; justify-content: center; font-size: 17px">♻</span>
+        <span style="flex: 1; font-family: var(--font-heading); font-size: 16px">국제관 1층</span>
+        <span style="font-size: 13px; color: var(--color-neutral-600)">40m · 24시간</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px; border-radius: var(--radius-lg); background: var(--color-neutral-100); border: 1px solid var(--color-neutral-200); padding: 14px 16px">
+        <span style="width: 38px; height: 38px; flex: none; border-radius: 12px; background: #DCF0D0; color: #3F7A2F; display: flex; align-items: center; justify-content: center; font-size: 17px">♻</span>
+        <span style="flex: 1; font-family: var(--font-heading); font-size: 16px">학생회관</span>
+        <span style="font-size: 13px; color: var(--color-neutral-600)">90m · 06–24시</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px; border-radius: var(--radius-lg); background: var(--color-neutral-100); border: 1px solid var(--color-neutral-200); padding: 14px 16px">
+        <span style="width: 38px; height: 38px; flex: none; border-radius: 12px; background: #DCF0D0; color: #3F7A2F; display: flex; align-items: center; justify-content: center; font-size: 17px">♻</span>
+        <span style="flex: 1; font-family: var(--font-heading); font-size: 16px">공학관 A동</span>
+        <span style="font-size: 13px; color: var(--color-neutral-600)">210m · 08–22시</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 30px 20px 0">
+    <div style="border-radius: var(--radius-lg); background: #FAF4E7; background-image: repeating-linear-gradient(118deg, transparent 0 34px, rgba(217,130,180,0.10) 34px 42px); border: 1px solid #E7DEC9; padding: 20px; display: flex; gap: 14px; align-items: center">
+      <svg viewBox="0 0 120 120" style="width: 96px; height: 96px; flex: none" aria-hidden="true">
+        <ellipse cx="44" cy="104" rx="14" ry="7" fill="#6FB556"></ellipse>
+        <ellipse cx="76" cy="104" rx="14" ry="7" fill="#6FB556"></ellipse>
+        <path d="M60 26 C 55 11, 68 4, 78 6 C 72 17, 68 23, 60 26 Z" fill="#B7DFA4" stroke="#4E9139" stroke-width="4" stroke-linejoin="round"></path>
+        <circle cx="60" cy="62" r="36" fill="#EAF6E0" stroke="#4E9139" stroke-width="4"></circle>
+        <path d="M40 58 q 6 -7 12 0" fill="none" stroke="#3F7A2F" stroke-width="4" stroke-linecap="round"></path>
+        <path d="M68 58 q 6 -7 12 0" fill="none" stroke="#3F7A2F" stroke-width="4" stroke-linecap="round"></path>
+        <ellipse cx="38" cy="72" rx="6.5" ry="4" fill="#F2C3DC"></ellipse>
+        <ellipse cx="82" cy="72" rx="6.5" ry="4" fill="#F2C3DC"></ellipse>
+        <path d="M52 74 q 8 8 16 0" fill="none" stroke="#3F7A2F" stroke-width="4" stroke-linecap="round"></path>
+        <circle cx="20" cy="46" r="7" fill="#F7D9E9"></circle>
+        <circle cx="100" cy="40" r="9" fill="#F7D9E9"></circle>
+        <circle cx="104" cy="66" r="6" fill="#F2C3DC"></circle>
+      </svg>
+      <div>
+        <h3 style="margin: 0; font-size: 18px">세척은 저희가 할게요</h3>
+        <p style="margin: 8px 0 0; font-size: 13px; line-height: 1.65; color: var(--color-neutral-700)">헹구지 않아도 됩니다. 음식물만 털어 뚜껑을 닫아 반납함에 넣으면, 캠퍼스 순환 파트너가 85℃ 고온 세척 후 다시 가게로 보냅니다.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 30px 20px 0">
+    <h2 style="margin: 0; font-size: 22px">🏅 내 배지</h2>
+    <p style="margin: 6px 0 0; font-size: 13px; color: var(--color-neutral-600)">다회용기를 쓸수록 배지가 쌓여요</p>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 16px">
+      <div style="text-align: center">
+        <div style="width: 68px; height: 68px; margin: 0 auto; border-radius: 999px; background: #EAF6E0; border: 2px solid #82C56A; display: flex; align-items: center; justify-content: center; font-size: 26px">🌱</div>
+        <div style="font-size: 12px; font-weight: 700; margin-top: 8px">첫 다회용기</div>
+      </div>
+      <div style="text-align: center">
+        <div style="width: 68px; height: 68px; margin: 0 auto; border-radius: 999px; background: #FCEEF5; border: 2px solid #E9A5C9; display: flex; align-items: center; justify-content: center; font-size: 26px">♻️</div>
+        <div style="font-size: 12px; font-weight: 700; margin-top: 8px">5회 달성</div>
+      </div>
+      <div style="text-align: center">
+        <div style="width: 68px; height: 68px; margin: 0 auto; border-radius: 999px; background: #FCEEF5; border: 2px solid #E9A5C9; display: flex; align-items: center; justify-content: center; font-size: 26px">🎯</div>
+        <div style="font-size: 12px; font-weight: 700; margin-top: 8px">반납 3회</div>
+      </div>
+      <div style="text-align: center">
+        <div style="width: 68px; height: 68px; margin: 0 auto; border-radius: 999px; background: #EAF6E0; border: 2px solid #82C56A; display: flex; align-items: center; justify-content: center; font-size: 26px">🌏</div>
+        <div style="font-size: 12px; font-weight: 700; margin-top: 8px">{{ campusName }} 기여</div>
+      </div>
+      <div style="text-align: center; opacity: 0.45">
+        <div style="width: 68px; height: 68px; margin: 0 auto; border-radius: 999px; background: var(--color-neutral-200); display: flex; align-items: center; justify-content: center; font-size: 26px">🏆</div>
+        <div style="font-size: 12px; font-weight: 700; margin-top: 8px">10회 달성 🔒</div>
+      </div>
+      <div style="text-align: center; opacity: 0.45">
+        <div style="width: 68px; height: 68px; margin: 0 auto; border-radius: 999px; background: var(--color-neutral-200); display: flex; align-items: center; justify-content: center; font-size: 26px">👑</div>
+        <div style="font-size: 12px; font-weight: 700; margin-top: 8px">이달의 다회용러 🔒</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="padding: 26px 20px 120px">
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px">
+      <div style="border-radius: var(--radius-lg); background: #EAF6E0; padding: 16px 10px; text-align: center">
+        <div style="width: 28px; height: 28px; margin: 0 auto; border-radius: 999px; background: var(--color-neutral-100); display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-size: 14px">1</div>
+        <div style="font-size: 13px; font-weight: 700; margin-top: 10px; line-height: 1.45">여기서<br>매장 고르기</div>
+      </div>
+      <div style="border-radius: var(--radius-lg); background: #EAF6E0; padding: 16px 10px; text-align: center">
+        <div style="width: 28px; height: 28px; margin: 0 auto; border-radius: 999px; background: var(--color-neutral-100); display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-size: 14px">2</div>
+        <div style="font-size: 13px; font-weight: 700; margin-top: 10px; line-height: 1.45">주문 화면에서<br><span style="color: #A63C79">다회용기 선택</span></div>
+      </div>
+      <div style="border-radius: var(--radius-lg); background: #EAF6E0; padding: 16px 10px; text-align: center">
+        <div style="width: 28px; height: 28px; margin: 0 auto; border-radius: 999px; background: var(--color-neutral-100); display: flex; align-items: center; justify-content: center; font-family: var(--font-heading); font-size: 14px">3</div>
+        <div style="font-size: 13px; font-weight: 700; margin-top: 10px; line-height: 1.45">스테이션에<br>반납</div>
+      </div>
+    </div>
+  </div>
+
+  <sc-if value="{{ showSticky }}" hint-placeholder-val="{{ true }}">
+    <div style="position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: flex; justify-content: center; pointer-events: none">
+      <div style="width: 100%; max-width: 430px; padding: 12px 20px 20px; background: linear-gradient(to top, var(--color-bg) 68%, transparent); pointer-events: auto">
+        <button onClick="{{ openPopup }}" style="width: 100%; padding: 17px; border-radius: 999px; border: 1px solid transparent; background: #BE5C94; color: #fff; font-family: var(--font-heading); font-size: 17px; cursor: pointer; box-shadow: var(--shadow-md)" style-hover="background: #A85183" style-active="background: #A63C79">이 가게 다회용기 주문하기</button>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ isOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="position: fixed; inset: 0; z-index: 50; display: flex; justify-content: center; background: color-mix(in srgb, #2e2b25 40%, transparent)">
+      <div style="width: 100%; max-width: 430px; background: #FFFFFF; display: flex; flex-direction: column; overflow: hidden">
+
+        <div style="display: flex; align-items: center; gap: 8px; padding: 12px 14px; border-bottom: 1px solid var(--color-divider); background: #FFFFFF">
+          <button onClick="{{ back }}" style="width: 34px; height: 34px; flex: none; border-radius: 999px; border: 1px solid var(--color-neutral-300); background: transparent; cursor: pointer; font-size: 15px; color: var(--color-text)" style-hover="background: #FCEEF5">←</button>
+          <span style="flex: 1; text-align: center; font-family: var(--font-heading); font-size: 16px">{{ popupTitle }}</span>
+          <button onClick="{{ closePopup }}" style="width: 34px; height: 34px; flex: none; border-radius: 999px; border: 1px solid var(--color-neutral-300); background: transparent; cursor: pointer; font-size: 15px; color: var(--color-text)" style-hover="background: #FCEEF5">✕</button>
+        </div>
+
+        <sc-if value="{{ showStore }}" hint-placeholder-val="{{ true }}">
+          <div class="scroll-y" style="flex: 1; background: #FFFFFF; color: #111111">
+            <div style="height: 176px; background: #F0EFEA; display: flex; align-items: flex-end; justify-content: space-between; padding: 12px">
+              <span style="padding: 6px 12px; border-radius: 999px; background: #FFFFFF; font-size: 12px; font-weight: 700; color: #111111">메뉴 사진 1 / 3</span>
+              <span style="padding: 7px 13px; border-radius: 999px; background: #FFFFFF; font-size: 12px; font-weight: 700; color: #111111">＋ 함께주문</span>
+            </div>
+
+            <div style="padding: 14px 18px 0">
+              <span style="display: inline-block; padding: 7px 13px; border-radius: 999px; background: #2AC1BC; color: #111111; font-size: 12px; font-weight: 800">고객님이 내는 알뜰·가게배달팁 0원</span>
+              <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 12px">
+                <h4 style="margin: 0; font-family: var(--font-body); font-weight: 800; font-size: 25px; color: #111111">{{ storeName }}</h4>
+                <span style="font-size: 20px; color: #9A9A9A">♡</span>
+              </div>
+              <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 10px">
+                <span style="font-size: 15px; font-weight: 800; color: #111111">⭐ 4.9(379) <span style="color: #9A9A9A; font-weight: 500">›</span></span>
+                <span style="padding: 6px 12px; border-radius: 999px; background: #F2F3F5; font-size: 12px; color: #555555">가게정보·원산지</span>
+              </div>
+              <div style="font-size: 13px; color: #8A8A8A; margin-top: 8px">캠퍼스 순환 파트너 · 다회용기</div>
+            </div>
+
+            <div style="margin: 14px 18px 0; border-radius: 18px; background: #F2F3F5; padding: 5px">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px">
+                <div style="text-align: center; padding: 11px; border-radius: 999px; background: #FFFFFF; font-size: 15px; font-weight: 800; color: #111111">배달</div>
+                <div style="text-align: center; padding: 11px; border-radius: 999px; font-size: 15px; color: #555555">픽업 <span style="color: #5C57E8; font-weight: 800">최대 1,000원 할인</span></div>
+              </div>
+              <div style="background: #FFFFFF; border-radius: 16px; margin-top: 5px; padding: 14px 16px">
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 14px">
+                  <span style="color: #555555">최소주문</span>
+                  <span style="font-weight: 800; color: #111111">13,000원</span>
+                </div>
+                <div style="display: flex; gap: 12px; margin-top: 14px">
+                  <span style="font-size: 14px; color: #555555; width: 74px; flex: none">가게배달 🏪</span>
+                  <div style="flex: 1">
+                    <div style="font-size: 14px; font-weight: 800; color: #111111">39~54분 <span style="margin-left: 4px; padding: 2px 8px; border-radius: 999px; background: #EEF1FF; color: #5C57E8; font-size: 11px; font-weight: 700">가장 저렴해요</span></div>
+                    <div style="font-size: 13px; color: #5C57E8; font-weight: 800; margin-top: 3px">배달팁 무료 적용 중 <span style="color: #B0B0B0; font-weight: 500; text-decoration: line-through">2,000원</span></div>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 12px; margin-top: 14px">
+                  <span style="font-size: 14px; color: #555555; width: 74px; flex: none">알뜰배달</span>
+                  <div style="flex: 1">
+                    <div style="font-size: 14px; font-weight: 800; color: #111111">12~27분</div>
+                    <div style="font-size: 13px; color: #5C57E8; font-weight: 800; margin-top: 3px">배달팁 무료 적용 중 <span style="color: #B0B0B0; font-weight: 500; text-decoration: line-through">1,900원</span></div>
+                  </div>
+                </div>
+                <div style="display: flex; gap: 12px; margin-top: 14px">
+                  <span style="font-size: 14px; color: #555555; width: 74px; flex: none">한집배달 🏠</span>
+                  <div style="flex: 1">
+                    <div style="font-size: 14px; font-weight: 800; color: #111111">12~22분</div>
+                    <div style="font-size: 13px; margin-top: 3px; color: #111111">1,000원 <span style="color: #B0B0B0; text-decoration: line-through">2,900원</span></div>
+                  </div>
+                </div>
+                <div style="margin-top: 14px; border-radius: 12px; background: #EEF1FF; padding: 11px; font-size: 12px; font-weight: 800; color: #5C57E8; text-align: center">다회용기 주문은 배달팁 0원 + 캠퍼스 1,000원 즉시할인</div>
+              </div>
+            </div>
+
+            <div class="scroll-x" style="display: flex; gap: 10px; padding: 14px 18px 0">
+              <div style="min-width: 248px; border-radius: 14px; background: #F7F8FA; padding: 12px; display: flex; gap: 10px">
+                <div style="width: 52px; height: 52px; border-radius: 10px; background: #E4E6EA; flex: none"></div>
+                <div>
+                  <div style="font-size: 12px; color: #FFB800">★★★★★</div>
+                  <div style="font-size: 13px; margin-top: 4px; line-height: 1.45; color: #111111">그릇째 받으니 국물도 안 새요!…</div>
+                </div>
+              </div>
+              <div style="min-width: 248px; border-radius: 14px; background: #F7F8FA; padding: 12px; display: flex; gap: 10px">
+                <div style="width: 52px; height: 52px; border-radius: 10px; background: #E4E6EA; flex: none"></div>
+                <div>
+                  <div style="font-size: 12px; color: #FFB800">★★★★★</div>
+                  <div style="font-size: 13px; margin-top: 4px; line-height: 1.45; color: #111111">국제관 반납함 바로 앞이라 편해요…</div>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin: 12px 18px 0; border-radius: 14px; border: 1px solid #E7E7E7; padding: 13px 14px; font-size: 13px; color: #555555">★기본메뉴는 계란 후라이, 상추, 김가루, 날치알 토핑…</div>
+
+            <div style="height: 10px; background: #F2F3F5; margin-top: 16px"></div>
+
+            <div class="scroll-x" style="display: flex; gap: 8px; padding: 14px 18px 0">
+              <span style="padding: 9px 14px; border-radius: 999px; background: #F2F3F5; font-size: 13px">🔍</span>
+              <span style="padding: 9px 16px; border-radius: 999px; background: #111111; color: #FFFFFF; font-size: 13px; font-weight: 800; white-space: nowrap">인기 메뉴</span>
+              <span style="padding: 9px 16px; border-radius: 999px; border: 1px solid #E0E0E0; font-size: 13px; white-space: nowrap; color: #111111">알밥</span>
+              <span style="padding: 9px 16px; border-radius: 999px; border: 1px solid #E0E0E0; font-size: 13px; white-space: nowrap; color: #111111">스낵&사이드</span>
+              <span style="padding: 9px 16px; border-radius: 999px; border: 1px solid #E0E0E0; font-size: 13px; white-space: nowrap; color: #111111">음료</span>
+            </div>
+
+            <div style="padding: 18px 18px 0">
+              <h5 style="margin: 0; font-family: var(--font-body); font-weight: 800; font-size: 21px; color: #111111">가장 인기 있는 메뉴</h5>
+              <div style="font-size: 13px; color: #8A8A8A; margin-top: 6px">한 달간 주문수가 많고 만족도가 높은 메뉴예요.</div>
+            </div>
+
+            <sc-for list="{{ menu }}" as="m" hint-placeholder-count="4">
+              <div style="display: flex; gap: 14px; padding: 18px; border-bottom: 1px solid #F0F0F0">
+                <div style="flex: 1">
+                  <div style="display: flex; gap: 6px; flex-wrap: wrap">
+                    <span style="padding: 3px 9px; border-radius: 6px; background: #F2F3F5; font-size: 11px; font-weight: 800; color: #555555">{{ m.rank }}</span>
+                    <span style="padding: 3px 9px; border-radius: 6px; background: #E6F7F6; font-size: 11px; font-weight: 800; color: #0E8F88">{{ m.badge }}</span>
+                  </div>
+                  <div style="font-size: 17px; font-weight: 800; margin-top: 8px; line-height: 1.3; color: #111111">{{ m.name }}</div>
+                  <div style="font-size: 13px; color: #8A8A8A; margin-top: 5px; line-height: 1.5">{{ m.desc }}</div>
+                  <div style="font-size: 18px; font-weight: 800; margin-top: 8px; color: #111111">{{ m.priceText }}</div>
+                  <div style="font-size: 12px; color: #8A8A8A; margin-top: 4px">리뷰 {{ m.reviews }}</div>
+                </div>
+                <div style="width: 88px; flex: none; position: relative">
+                  <div style="width: 88px; height: 88px; border-radius: 12px; background: #E9EAEC"></div>
+                  <button onClick="{{ m.add }}" style="position: absolute; right: -6px; bottom: -6px; width: 38px; height: 38px; border-radius: 999px; border: 1px solid #EDEDED; background: #FFFFFF; color: #111111; font-size: 20px; line-height: 1; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.12)" style-hover="background: #F2F3F5">+</button>
+                </div>
+              </div>
+            </sc-for>
+            <div style="height: 12px"></div>
+          </div>
+
+          <div style="border-top: 1px solid #EFEFEF; background: #FFFFFF">
+            <div style="padding: 10px 18px; background: #EEF1FF; font-size: 12px; font-weight: 800; color: #5C57E8; text-align: center">알뜰배달, 가게배달 주문하면 배달팁 0원</div>
+            <sc-if value="{{ hasCart }}" hint-placeholder-val="{{ true }}">
+              <div style="padding: 14px 18px 18px; display: flex; align-items: center; gap: 12px">
+                <div style="flex: 1">
+                  <div style="font-size: 22px; font-weight: 800; color: #111111">{{ totalText }}</div>
+                  <div style="font-size: 12px; color: #8A8A8A; margin-top: 2px">{{ minOrderNote }}</div>
+                </div>
+                <button onClick="{{ goCart }}" style="padding: 15px 22px; border-radius: 12px; border: none; background: #2AC1BC; color: #111111; font-size: 16px; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 8px" style-hover="background: #22ABA7"><span style="width: 22px; height: 22px; border-radius: 999px; background: #111111; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; font-size: 12px">{{ cartCount }}</span>장바구니 보기</button>
+              </div>
+            </sc-if>
+            <sc-if value="{{ notPicked }}" hint-placeholder-val="{{ false }}">
+              <div style="padding: 15px 18px 18px; text-align: center; font-size: 13px; color: #8A8A8A">메뉴 옆 + 를 누르면 장바구니에 담겨요</div>
+            </sc-if>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ showCart }}" hint-placeholder-val="{{ false }}">
+          <div style="display: flex; gap: 20px; padding: 0 18px; border-bottom: 1px solid #EFEFEF; background: #FFFFFF">
+            <span style="padding: 13px 0; font-size: 15px; font-weight: 800; color: #111111; border-bottom: 2px solid #111111">배달·픽업 {{ cartCount }}</span>
+            <span style="padding: 13px 0; font-size: 15px; color: #9A9A9A">장보기·쇼핑</span>
+            <span style="padding: 13px 0; font-size: 15px; color: #9A9A9A">전국특가</span>
+          </div>
+          <div class="scroll-y" style="flex: 1; padding: 18px; background: #F7F8FA; color: #111111">
+            <h5 style="margin: 0; font-size: 19px; font-weight: 800">수령방법을 선택해주세요 ⓘ</h5>
+            <div style="margin-top: 12px; border-radius: 12px; background: #EAF3FF; padding: 12px 14px; font-size: 13px; color: #2C6ED5; line-height: 1.5">다회용기 배달은 국제관 반납함 이용 시에만 신청할 수 있어요 ›</div>
+
+            <div style="margin-top: 14px; border-radius: 18px; background: #FFFFFF; padding: 18px">
+              <div style="display: flex; align-items: center; gap: 10px">
+                <span style="width: 22px; height: 22px; border-radius: 999px; border: 6px solid #111111; background: #FFFFFF"></span>
+                <span style="font-size: 17px; font-weight: 800">배달</span>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 14px">
+                <div style="border-radius: 14px; border: 1px solid #E7E7E7; padding: 12px 10px">
+                  <div style="font-size: 13px; font-weight: 800">한집배달 🏠</div>
+                  <div style="font-size: 12px; color: #8A8A8A; margin-top: 4px">12~22분</div>
+                  <div style="font-size: 12px; color: #B0B0B0; text-decoration: line-through; margin-top: 10px">2,900원</div>
+                  <div style="font-size: 15px; font-weight: 800; color: #5C57E8">⚡ 1,000원</div>
+                </div>
+                <div style="border-radius: 14px; border: 2px solid #111111; padding: 12px 10px">
+                  <div style="font-size: 13px; font-weight: 800">알뜰배달</div>
+                  <div style="font-size: 12px; color: #8A8A8A; margin-top: 4px">12~27분</div>
+                  <div style="font-size: 12px; color: #B0B0B0; text-decoration: line-through; margin-top: 10px">1,900원</div>
+                  <div style="font-size: 15px; font-weight: 800; color: #5C57E8">⚡ 0원</div>
+                </div>
+                <div style="border-radius: 14px; border: 1px solid #E7E7E7; padding: 12px 10px">
+                  <div style="font-size: 13px; font-weight: 800">가게배달 🏪</div>
+                  <div style="font-size: 12px; color: #8A8A8A; margin-top: 4px">39~54분</div>
+                  <div style="font-size: 12px; color: #B0B0B0; text-decoration: line-through; margin-top: 10px">2,000원</div>
+                  <div style="font-size: 15px; font-weight: 800; color: #5C57E8">⚡ 0원</div>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; margin-top: 18px">
+                <span style="width: 22px; height: 22px; border-radius: 999px; border: 2px solid #C9C9C9"></span>
+                <span style="font-size: 15px; font-weight: 800">픽업 <span style="color: #8A8A8A; font-size: 13px; font-weight: 500">6~16분 후 픽업</span></span>
+              </div>
+            </div>
+
+            <h5 style="margin: 22px 0 0; font-size: 19px; font-weight: 800">담은 메뉴</h5>
+            <div style="margin-top: 12px; border-radius: 18px; background: #FFFFFF; padding: 4px 16px">
+              <sc-for list="{{ lines }}" as="line" hint-placeholder-count="1">
+                <div style="display: flex; align-items: center; gap: 12px; padding: 14px 0; border-bottom: 1px solid #F0F0F0">
+                  <div style="width: 48px; height: 48px; border-radius: 10px; background: #E9EAEC; flex: none"></div>
+                  <div style="flex: 1">
+                    <div style="font-size: 14px; font-weight: 800; line-height: 1.35">{{ line.label }}</div>
+                    <div style="font-size: 13px; color: #8A8A8A; margin-top: 3px">{{ line.priceText }}</div>
+                  </div>
+                  <button onClick="{{ line.remove }}" style="width: 30px; height: 30px; border-radius: 999px; border: 1px solid #E0E0E0; background: #FFFFFF; cursor: pointer; font-size: 14px; color: #555555" style-hover="background: #F2F3F5">−</button>
+                </div>
+              </sc-for>
+              <div style="display: flex; justify-content: space-between; padding: 14px 0; font-size: 14px">
+                <span>배달팁</span>
+                <span style="color: #5C57E8; font-weight: 800">0원</span>
+              </div>
+            </div>
+
+            <h5 style="margin: 22px 0 0; font-size: 19px; font-weight: 800">결제금액을 선택해주세요 ⓘ</h5>
+            <div style="margin-top: 12px; border-radius: 18px; background: #FFFFFF; padding: 16px">
+              <div style="display: grid; grid-template-columns: 1fr auto auto; gap: 10px 16px; font-size: 13px; align-items: center">
+                <span></span>
+                <span style="text-align: right; font-size: 11px; font-weight: 800; color: #8A8A8A">일회용</span>
+                <span style="text-align: right; font-size: 11px; font-weight: 800; color: #0E8F88; background: #E6F7F6; padding: 3px 8px; border-radius: 999px">다회용기</span>
+                <span style="color: #555555">메뉴 금액</span><span style="text-align: right">{{ totalText }}</span><span style="text-align: right">{{ totalText }}</span>
+                <span style="color: #555555">배달팁</span><span style="text-align: right">1,900원</span><span style="text-align: right">1,900원</span>
+                <span style="color: #555555">배달팁 할인</span><span style="text-align: right; color: #5C57E8">-1,900원</span><span style="text-align: right; color: #5C57E8">-1,900원</span>
+                <span style="color: #555555">캠퍼스 다회용기 할인</span><span style="text-align: right">0원</span><span style="text-align: right; color: #5C57E8; font-weight: 800">-1,000원</span>
+              </div>
+              <div style="height: 1px; background: #EFEFEF; margin: 14px 0"></div>
+              <div style="display: grid; grid-template-columns: 1fr auto auto; gap: 16px; align-items: baseline">
+                <span style="font-size: 15px; font-weight: 800">결제예정금액</span>
+                <span style="text-align: right; font-size: 15px; font-weight: 800">{{ totalText }}</span>
+                <span style="text-align: right; font-size: 19px; font-weight: 800; color: #0E8F88">{{ payText }}</span>
+              </div>
+            </div>
+          </div>
+          <div style="border-top: 1px solid #EFEFEF; padding: 14px 18px 18px; display: flex; align-items: center; gap: 12px; background: #FFFFFF">
+            <div style="flex: 1">
+              <div style="display: flex; align-items: baseline; gap: 8px">
+                <span style="font-size: 22px; font-weight: 800; color: #111111">{{ payText }}</span>
+                <span style="font-size: 13px; color: #B0B0B0; text-decoration: line-through">{{ strikeText }}</span>
+              </div>
+              <div style="font-size: 12px; color: #5C57E8; font-weight: 800; margin-top: 2px">배달팁 0원! ⚡ 다회용기 1,000원 할인</div>
+            </div>
+            <button onClick="{{ goOrder }}" style="padding: 15px 22px; border-radius: 12px; border: none; background: #2AC1BC; color: #111111; font-size: 16px; font-weight: 800; cursor: pointer; white-space: nowrap" style-hover="background: #22ABA7">주문하기</button>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ showOrder }}" hint-placeholder-val="{{ false }}">
+          <div class="scroll-y" style="flex: 1; padding: 16px 18px; background: #F7F8FA; color: #111111">
+            <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 10px">
+              <span style="font-size: 17px; font-weight: 800">알뜰배달로 받을게요</span>
+              <span style="font-size: 13px; color: #8A8A8A; white-space: nowrap">🕐 12~27분 후 도착</span>
+            </div>
+
+            <div style="margin-top: 14px; border-radius: 18px; background: #FFFFFF; padding: 16px">
+              <div style="font-size: 16px; font-weight: 800">담은 메뉴</div>
+              <sc-for list="{{ lines }}" as="line" hint-placeholder-count="1">
+                <div style="display: flex; gap: 12px; margin-top: 12px">
+                  <div style="width: 52px; height: 52px; border-radius: 10px; background: #E9EAEC; flex: none"></div>
+                  <div>
+                    <div style="font-size: 14px; font-weight: 800; line-height: 1.35">{{ line.label }}</div>
+                    <div style="font-size: 13px; margin-top: 3px">{{ line.priceText }}</div>
+                    <div style="font-size: 12px; color: #8A8A8A; margin-top: 2px">가격: {{ line.unitText }}</div>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+
+            <div style="margin-top: 12px; border-radius: 18px; background: #FFFFFF; padding: 16px">
+              <div style="font-size: 15px; font-weight: 800">배달주소</div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 8px">
+                <div>
+                  <div style="font-size: 15px; font-weight: 800">📍 학교 (국제관)</div>
+                  <div style="font-size: 13px; color: #8A8A8A; margin-top: 3px">성동구 왕십리로 222 국제관 앞</div>
+                </div>
+                <span style="color: #B0B0B0">›</span>
+              </div>
+              <div style="height: 1px; background: #F0F0F0; margin: 14px 0"></div>
+              <div style="font-size: 15px; font-weight: 800">라이더 요청사항</div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 6px">
+                <span style="font-size: 14px">국제관 1층 반납함 옆 선반에 두고 문자 주세요.</span>
+                <span style="color: #B0B0B0">›</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 12px; border-radius: 18px; background: #FFFFFF; padding: 16px">
+              <div style="font-size: 15px; font-weight: 800">내 연락처</div>
+              <div style="display: flex; align-items: center; gap: 8px; margin-top: 8px">
+                <span style="font-size: 14px">010-3356-6750</span>
+                <span style="padding: 4px 10px; border-radius: 999px; border: 1px solid #E0E0E0; font-size: 11px; color: #555555">✓ 안심콜 / 안심번호</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 12px; border-radius: 18px; background: #FFFFFF; padding: 16px">
+              <div style="font-size: 15px; font-weight: 800">가게 요청사항</div>
+              <div style="margin-top: 10px; border-radius: 12px; border: 1px solid #E0E0E0; padding: 12px 16px; font-size: 14px; color: #8A8A8A; display: flex; justify-content: space-between">요청사항 없음 <span>⌄</span></div>
+              <div style="display: flex; flex-wrap: wrap; gap: 14px 20px; margin-top: 14px">
+                <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 800"><span style="width: 22px; height: 22px; border-radius: 6px; background: #111111; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; font-size: 13px">✓</span>수저·포크 안 받기</span>
+                <button onClick="{{ toggleReusable }}" style="display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 800; border: none; background: transparent; padding: 0; cursor: pointer; color: #111111; font-family: var(--font-body)"><span style="width: 22px; height: 22px; border-radius: 6px; background: {{ reusableBoxBg }}; border: 1px solid #C9C9C9; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center; font-size: 13px">{{ reusableMark }}</span>다회용기 사용 ⓘ</button>
+                <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: #555555"><span style="width: 22px; height: 22px; border-radius: 6px; border: 1px solid #C9C9C9"></span>기본반찬 안 받기</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 12px; border-radius: 18px; background: #FFFFFF; padding: 16px">
+              <div style="font-size: 15px; font-weight: 800">품절 시 요청사항</div>
+              <div style="margin-top: 10px; border-radius: 12px; border: 1px solid #E0E0E0; padding: 12px 16px; font-size: 14px; display: flex; justify-content: space-between">품절 메뉴만 부분 취소 해주세요 <span>⌄</span></div>
+            </div>
+
+            <div style="margin-top: 12px; border-radius: 18px; background: #FFFFFF; padding: 4px 16px">
+              <div style="font-size: 15px; font-weight: 800; padding: 14px 0 4px">결제수단</div>
+              <div style="display: flex; align-items: center; gap: 10px; padding: 13px 0; border-bottom: 1px solid #F0F0F0">
+                <span style="width: 20px; height: 20px; border-radius: 999px; border: 6px solid #111111; background: #FFFFFF"></span>
+                <span style="font-size: 15px; font-weight: 800">신용·체크카드</span>
+                <span style="margin-left: auto; font-size: 12px; color: #8A8A8A">변경 ›</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; padding: 13px 0; border-bottom: 1px solid #F0F0F0">
+                <span style="width: 20px; height: 20px; border-radius: 999px; border: 2px solid #C9C9C9"></span>
+                <span style="font-size: 15px">간편결제</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px; padding: 13px 0">
+                <span style="width: 20px; height: 20px; border-radius: 999px; border: 2px solid #C9C9C9"></span>
+                <span style="font-size: 15px">기타 결제수단</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 12px; border-radius: 18px; background: #FFFFFF; padding: 4px 16px">
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 14px 0; border-bottom: 1px solid #F0F0F0">
+                <span style="font-size: 15px; font-weight: 800">할인쿠폰</span>
+                <span style="font-size: 13px; color: #8A8A8A">2개 보유 ›</span>
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; padding: 14px 0">
+                <span style="font-size: 15px; font-weight: 800">반납 포인트</span>
+                <span style="font-size: 13px; color: #8A8A8A">0원 ›</span>
+              </div>
+            </div>
+
+            <div style="margin-top: 12px; border-radius: 18px; background: #FFFFFF; padding: 16px">
+              <div style="display: flex; justify-content: space-between; font-size: 14px; padding: 4px 0"><span>메뉴금액</span><span>{{ totalText }}</span></div>
+              <div style="display: flex; justify-content: space-between; font-size: 14px; padding: 4px 0"><span>배달팁</span><span>1,900원</span></div>
+              <div style="border-top: 1px dashed #D8D8D8; margin: 12px 0"></div>
+              <div style="display: flex; justify-content: space-between; font-size: 14px; padding: 4px 0; color: #5C57E8; font-weight: 800"><span>총 할인받은 금액</span><span>-2,900원</span></div>
+              <div style="display: flex; justify-content: space-between; font-size: 13px; padding: 4px 0; color: #5C57E8"><span>배달팁 할인</span><span>-1,900원</span></div>
+              <div style="display: flex; justify-content: space-between; font-size: 13px; padding: 4px 0; color: #5C57E8"><span>다회용기 할인</span><span>-1,000원</span></div>
+              <div style="height: 1px; background: #111111; margin: 12px 0"></div>
+              <div style="display: flex; justify-content: space-between; align-items: baseline"><span style="font-size: 17px; font-weight: 800">결제금액</span><span style="font-size: 23px; font-weight: 800">{{ payText }}</span></div>
+              <div style="margin-top: 12px; border-radius: 10px; background: #EEF1FF; padding: 11px; text-align: center; font-size: 13px; font-weight: 800; color: #5C57E8">배달팁 0원! ⚡ 다회용기 1,000원 할인</div>
+            </div>
+          </div>
+          <div style="border-top: 1px solid #EFEFEF; background: #FFFFFF">
+            <div style="background: #14161C; color: #FFFFFF; padding: 12px 18px; font-size: 13px; font-weight: 800">이 주문으로 {{ campusName }} 목표 <span style="color: #2AC1BC">+2개</span> 적립</div>
+            <div style="padding: 14px 18px 18px; display: flex; align-items: center; gap: 12px">
+              <div style="flex: 1; font-size: 12px; font-weight: 800; color: #5C57E8; line-height: 1.5">배달팁 0원!<br>⚡ 다회용기 1,000원 할인</div>
+              <button onClick="{{ goDone }}" style="flex: 1.4; padding: 16px 18px; border-radius: 12px; border: none; background: #2AC1BC; color: #111111; font-size: 16px; font-weight: 800; cursor: pointer" style-hover="background: #22ABA7">{{ payText }} 결제하기</button>
+            </div>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ showDone }}" hint-placeholder-val="{{ false }}">
+          <div class="scroll-y" style="flex: 1; padding: 30px 22px; display: flex; flex-direction: column; align-items: center; text-align: center; background: var(--color-bg)">
+            <svg viewBox="0 0 120 120" style="width: 132px; height: 132px; flex: none" aria-hidden="true">
+              <ellipse cx="44" cy="104" rx="14" ry="7" fill="#6FB556"></ellipse>
+              <ellipse cx="76" cy="104" rx="14" ry="7" fill="#6FB556"></ellipse>
+              <path d="M60 26 C 55 11, 68 4, 78 6 C 72 17, 68 23, 60 26 Z" fill="#B7DFA4" stroke="#4E9139" stroke-width="4" stroke-linejoin="round"></path>
+              <circle cx="60" cy="62" r="36" fill="#EAF6E0" stroke="#4E9139" stroke-width="4"></circle>
+              <path d="M60 82 C 44 70, 42 56, 51 52 C 56 50, 60 54, 60 58 C 60 54, 64 50, 69 52 C 78 56, 76 70, 60 82 Z" fill="#F2C3DC" stroke="#D982B4" stroke-width="3.5" stroke-linejoin="round"></path>
+              <path d="M14 40 l 6 8" stroke="#8CCB72" stroke-width="4" stroke-linecap="round"></path>
+              <path d="M106 40 l -6 8" stroke="#8CCB72" stroke-width="4" stroke-linecap="round"></path>
+            </svg>
+            <h4 style="margin: 8px 0 0; font-size: 24px">주문이 접수됐어요</h4>
+            <p style="margin: 10px 0 0; font-size: 14px; color: var(--color-neutral-700); line-height: 1.7">스테인리스 다회용기로 담아 국제관 앞으로 갑니다. 식사 후 1층 반납함에 넣어주세요.</p>
+            <div style="width: 100%; margin-top: 22px; border-radius: var(--radius-lg); background: var(--color-neutral-200); padding: 18px; text-align: left">
+              <div style="display: flex; align-items: baseline; justify-content: space-between"><span style="font-size: 13px; font-weight: 700; color: var(--color-neutral-700)">{{ campusName }} 이번 달 목표</span><span style="font-family: var(--font-heading); font-size: 15px; color: #4E9139">+2개</span></div>
+              <div style="height: 12px; border-radius: 999px; background: var(--color-neutral-300); margin-top: 12px; overflow: hidden"><div style="width: 70.4%; height: 100%; border-radius: 999px; background: #82C56A"></div></div>
+              <div style="font-size: 13px; color: var(--color-neutral-700); margin-top: 10px">844개 / 1,200개 · 목표까지 356개</div>
+            </div>
+            <div style="width: 100%; margin-top: 12px; border-radius: var(--radius-lg); background: #FCEEF5; padding: 16px; text-align: left; font-size: 13px; line-height: 1.6; color: #A63C79">반납 기한 이틀 뒤 오후 9시 · 기한 안에 반납하면 {{ returnBonusText }}가 적립됩니다.</div>
+            <button onClick="{{ closePopup }}" style="margin-top: 22px; padding: 15px 28px; border-radius: 999px; border: 1px solid var(--color-neutral-400); background: transparent; font-family: var(--font-heading); font-size: 15px; color: var(--color-text); cursor: pointer" style-hover="background: #FCEEF5; border-color: #E9A5C9">소개 페이지로 돌아가기</button>
+          </div>
+        </sc-if>
+
+      </div>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:430,&quot;height&quot;:932},&quot;campusName&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;국제학부&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;returned&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:842,&quot;min&quot;:0,&quot;max&quot;:1200,&quot;step&quot;:1,&quot;tsType&quot;:&quot;number&quot;},&quot;returnBonus&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:300,&quot;min&quot;:0,&quot;max&quot;:2000,&quot;step&quot;:50,&quot;unit&quot;:&quot;P&quot;,&quot;tsType&quot;:&quot;number&quot;}}">
+const MENU = [
+  { id: 1, rank: "인기 1위", badge: "다회용기", name: "약매알밥", desc: "약간 매콤한 감칠맛의 알촌 BEST 메뉴\n기본토핑 (국내산 돼지고기, 상추, 김가루, 날…", price: 6700, reviews: 110 },
+  { id: 2, rank: "인기 2위", badge: "사장님 추천", name: "(흑돼지)제육알밥(계란포함X)", desc: "마늘의 알싸함과 톡톡 날치알이 듬뿍\n매콤한 소스와 제육의 환상적인 조합…", price: 7100, reviews: 48 },
+  { id: 3, rank: "인기 3위", badge: "다회용기", name: "매콤알밥", desc: "매콤한 맛이 입에 감도는 환상의 맛\n국내산 돼지고기, 상추, 김가루, 계란후라이,…", price: 6800, reviews: 38 },
+  { id: 4, rank: "인기 4위", badge: "다회용기", name: "순한알밥", desc: "전혀 맵지 않아 누구든 즐길 수 있어요\n기본토핑 (국내산 돼지고기, 상추, 김가루, 날…", price: 6400, reviews: 53 },
+  { id: 5, rank: "인기 5위", badge: "사장님 추천", name: "그릴드치킨알밥(약간매운맛)", desc: "할랄 인증받은 닭고기로 부드럽고 담백합니다. …", price: 7300, reviews: 24 },
+];
+const MIN_ORDER = 13000;
+const DISCOUNT = 1000;
+
+const STORES = [
+  { name: "알촌 한양대점", meta: "국제관 210m · ★4.9", before: "14,400원", after: "13,400원", save: "1,000원", station: "국제관 1층 · 40m" },
+  { name: "정문치킨 · 후라이드", meta: "정문 120m · ★4.8", before: "19,000원", after: "17,500원", save: "1,500원", station: "학생회관 · 90m" },
+  { name: "할매분식 · 떡볶이 세트", meta: "정문 150m · ★4.5", before: "8,500원", after: "7,700원", save: "800원", station: "국제관 1층 · 40m" },
+];
+
+class Component extends DCLogic {
+  state = { step: 0, picked: false, cart: {}, reusable: true, storeName: STORES[0].name };
+
+  won(n) { return n.toLocaleString("ko-KR") + "원"; }
+  item(id) { return MENU.find(m => m.id === Number(id)); }
+  total() { return Object.keys(this.state.cart).reduce((s, k) => s + this.item(k).price * this.state.cart[k], 0); }
+  add(id) { this.setState(s => ({ picked: true, cart: { ...s.cart, [id]: (s.cart[id] || 0) + 1 } })); }
+  remove(id) {
+    this.setState(s => {
+      const cart = { ...s.cart };
+      if (cart[id] > 1) cart[id] -= 1; else delete cart[id];
+      return { cart, picked: Object.keys(cart).length > 0 };
+    });
+  }
+
+  renderVals() {
+    const step = this.state.step;
+    const total = this.total();
+    const reusable = this.state.reusable;
+    const pay = Math.max(0, total - (reusable ? DISCOUNT : 0));
+    const lines = Object.keys(this.state.cart).map(id => ({
+      label: this.item(id).name + " " + this.state.cart[id] + "개",
+      priceText: this.won(this.item(id).price * this.state.cart[id]),
+      unitText: this.won(this.item(id).price),
+      remove: () => this.remove(id),
+    }));
+    const short = MIN_ORDER - total;
+    const titles = { 1: this.state.storeName, 2: "장바구니", 3: "주문하기", 4: "주문 완료" };
+    return {
+      menu: MENU.map(m => ({ ...m, priceText: this.won(m.price), add: () => this.add(m.id) })),
+      lines,
+      hasCart: lines.length > 0,
+      cartCount: Object.keys(this.state.cart).reduce((s, k) => s + this.state.cart[k], 0),
+      totalText: this.won(total),
+      payText: this.won(pay),
+      strikeText: this.won(total + 1900),
+      minOrderNote: short > 0 ? this.won(short) + " 더 담으면 주문 가능" : "최소주문 금액을 채웠어요",
+      reusable,
+      reusableMark: reusable ? "✓" : "",
+      reusableBoxBg: reusable ? "#111111" : "#FFFFFF",
+      toggleReusable: () => this.setState(s => ({ reusable: !s.reusable })),
+      goCart: () => this.setState({ step: 2 }),
+      goOrder: () => this.setState({ step: 3 }),
+      goDone: () => this.setState({ step: 4 }),
+      isOpen: step > 0,
+      showSticky: step === 0,
+      showStore: step === 1,
+      showCart: step === 2,
+      showOrder: step === 3,
+      showDone: step === 4,
+      picked: lines.length > 0,
+      notPicked: lines.length === 0,
+      popupTitle: titles[step] || "",
+      storeName: this.state.storeName,
+      campusName: this.props.campusName ?? "국제학부",
+      returnedText: (this.props.returned ?? 842).toLocaleString("ko-KR"),
+      returnBonusText: (this.props.returnBonus ?? 300).toLocaleString("ko-KR") + "P",
+      stores: STORES.map(s => ({ ...s, order: () => this.setState({ step: 1, cart: {}, storeName: s.name }) })),
+      openPopup: () => this.setState({ step: 1, cart: {}, storeName: STORES[0].name }),
+      closePopup: () => this.setState({ step: 0, cart: {} }),
+      back: () => this.setState(s => ({ step: s.step > 1 ? s.step - 1 : 0 })),
+      next: () => this.setState(s => ({ step: Math.min(4, s.step + 1) })),
+    };
+  }
+}
+</script>
+</body>
+</html>
